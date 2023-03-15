@@ -17,7 +17,7 @@ public class ReadFour
             // values in the input file.
 
             try {
-                Scanner fileIn = new Scanner(new File("input.txt"));
+                Scanner fileIn = new Scanner(new File("Step4/input.txt"));
                 int sum = 0;
                 while (fileIn.hasNext())
                 {
@@ -25,10 +25,8 @@ public class ReadFour
                     String lineIn = fileIn.nextLine();
                     System.out.println(lineIn);
                     // Split the line into a String array
-                    String [] input = lineIn.split(" , ");
-                    int i;
-                    for ( i = 0; i < input.length; i++);
-                        sum = sum + Integer.parseInt(input[i]);
+
+                    sum = sum + Integer.parseInt(lineIn);
                     }
                     System.out.println(sum);
                 fileIn.close();
